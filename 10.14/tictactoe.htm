@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0,
+        maximum-scale=1.0, minimum-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+    <section>
+        <div id="background-overlay"></div>
+        <h1 class="game--title">Tic Tac Toe</h1>
+        <div id="mode-selection">
+            <button id="player-vs-player">Player vs Player</button>
+            <button id="player-vs-ai">Player vs AI</button>
+        </div>
+        <div id="scoreboard">
+            <span>Iron Man Score: <span id="score-x">0</span></span>
+            <span>Captain Score: <span id="score-o">0</span></span>
+        </div>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+            <div data-cell-index="9" class="cell"></div>
+            <div data-cell-index="10" class="cell"></div>
+            <div data-cell-index="11" class="cell"></div>
+            <div data-cell-index="12" class="cell"></div>
+            <div data-cell-index="13" class="cell"></div>
+            <div data-cell-index="14" class="cell"></div>
+            <div data-cell-index="15" class="cell"></div>
+        </div>
+
+        <embed src="avengers-bgm.mp3"  width="150" height="60" loop=“-1” autostart="True"></embed>
+
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Restart Game</button>
+        <button id="reset-score-btn">Reset Score</button>
+        <div id="quiz-modal" style="display:none;">
+            <div id="quiz-content">
+                <p id="question"></p>
+                <div id="options"></div>
+                <button id="submit-answer">提交答案</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="tictactoe.js"></script>
+</body>
+</html>
